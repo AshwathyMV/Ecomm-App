@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>login</h1>
+            <div class="border border-primary">
+                <p>login here!</p>
+                <form action="" method="post">
+                    {%csrf_token%}
+                    <div class="mb-3">
+                    <input type="text" placeholder="username" class="form-control" name="u_name">
+                </div>
+                 <div class="mb-3">
+                    <input type="text" placeholder="password" class="form-control" name="pwdaw">
+                </div>
+                <input type="submit" >
+            </div>
+                </form>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+</div>
+
+</body>
+</html>
